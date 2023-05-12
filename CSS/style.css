@@ -62,7 +62,7 @@ ul{
 }
 
 .orizontal-list li{
-  flex-basis: calc((100vw - 82px) / 4);
+  flex-basis: calc((100% - 20px) / 4);
   height: 30px;
 }
 
@@ -70,12 +70,13 @@ ul{
 .row{
   margin-bottom: 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
 }
 
 .card{
-  flex-basis: calc((100vw - 80px) / 2);
+  flex-basis: calc((100% - 20px) / 2);
   height: 270px;
 }
 
@@ -185,4 +186,16 @@ footer{
 /*********   RESPONSIVE   *********/
 
 
+@media screen and (min-width: 576px) {
+  #sidebar{
+    flex-basis: 200px;
+    
+  }
+
+  .orizontal-list li{
+    flex-basis: calc((100% - 20px) / 3)
+  }
+
+
+}
 
