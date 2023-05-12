@@ -58,10 +58,11 @@ ul{
 .orizontal-list{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .orizontal-list li{
-  flex-basis: 156px;
+  flex-basis: calc((100vw - 82px) / 4);
   height: 30px;
 }
 
@@ -183,10 +184,5 @@ footer{
 
 /*********   RESPONSIVE   *********/
 
-@media screen and (min-width: 576px) {
-    #sidebar{
-      flex-basis: 150px;
-    }
-}
 
 
