@@ -36,7 +36,46 @@ body{
   display: flex;
 }
 
+
+a{
+  color: white;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+
 /***** UTILITY *****/
+
+/* TODO REMOVE */
+.bd{
+  border: 1px solid white;
+}
+
+.orizontal-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orizontal-list li{
+  flex-basis: 156px;
+  height: 30px;
+}
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.card{
+  flex-basis: calc((100vw - 80px) / 2);
+  height: 270px;
+}
 
 
 /***** MAIN *****/
@@ -64,20 +103,56 @@ header{
   z-index: 1;
 
 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .library{
-  margin-top: 20px;
   margin-bottom: 170px;
   overflow-y: auto;
 }
 
 #sidebar{
-  flex-basis: 90px;
+  flex-basis: 60px;
   flex-shrink: 0;
-  height: 100vh;
+  height: calc(100vh - 150px);
   background-color: var(--bg-sidebar);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+
+/* Sidebar */
+
+.side-nav{
+  flex-basis: 30%;
+}
+
+.user-control{
+  flex-basis: 10%;
+}
+
+
+/* Header */
+
+.upgrade{
+    width: 20%;
+    height: 30%;
+}
+
+
+/* Library */
+
+.library-nav{
+  height: 80px;
+  padding: 10px;
+}
+
+
+
 
 /***** FOOTER *****/
 
