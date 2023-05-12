@@ -196,6 +196,24 @@ footer{
     flex-basis: calc((100% - 20px) / 3)
   }
 
-
 }
 
+
+@media screen and (min-width: 768px) {
+
+  .orizontal-list li{
+    flex-basis: calc((100% - 20px) / 5)
+  }
+
+  
+  .card{
+    flex-basis: calc((100% - 20px) / 4);
+  }
+
+  
+  .row{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+}
