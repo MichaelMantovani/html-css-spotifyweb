@@ -167,6 +167,17 @@ footer{
 }
 
 
+.controls{
+  height: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.controls > *{
+  height: 100%;
+  flex-basis: calc(100% / 3);
+}
+
 
 
 
@@ -177,3 +188,5 @@ footer{
       flex-basis: 150px;
     }
 }
+
+
