@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="icon" href="img/spotify-icon.svg">
+  <link rel="icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+
   <title>Spotify</title>
 </head>
 <body>
@@ -18,8 +20,64 @@
 
     <!-- Sidebar menu -->
     <aside id="sidebar">
-      <nav class="side-nav bd"></nav>
-      <div class="user-control bd"></div>
+
+      <!-- Side-nav part -->
+      <nav class="side-nav">
+        <div class="btn-nav">
+          <a class="d-none-s" href="#"><img src="img/logo-small.svg" alt="Logo Spotify piccolo"></a>
+          <a id="logo" class="d-none-xs d-block-s" href="#"><img src="img/logo.svg" alt="Logo Spotify"></a>
+          <a class="d-none-s" href="#"><img src="img/home.svg" alt="Home icon"></a>
+          <a class="d-none-xs d-flex-s" href="#">
+            <img src="img/home.svg" alt="Home icon">
+            <div>Home</div>
+          </a>
+          <a class="d-none-s" href="#"><img src="img/search.svg" alt="Search icon"></a>
+          <a class="d-none-xs d-flex-s" href="#">
+            <img src="img/search.svg" alt="Search icon"> 
+            <div>Cerca</div>
+          </a>
+          <a class="d-none-s" href="#"><img src="img/libreria.svg" alt="Library icon"></a>
+          <a class="d-none-xs d-flex-s" href="#">
+            <img src="img/libreria.svg" alt="Library icon">
+            <div>La tua libreria</div>
+          </a>
+        </div>
+        <div class="playlist-opt d-none-xs d-block-s">
+          <h3>Playlist</h3>
+          <a class="d-flex-s" href="#">
+            <i class="fa-solid fa-plus fa-2x"></i>
+            <span>Crea Playlist</span>
+          </a>
+          <ul class="playlist">
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- User controll section -->
+      <div class="user-control">
+        <a class="btn-download d-none-s" href="#">
+          <img id="download-icon" src="img/download.svg" alt="Download icon">
+        </a>
+        <a class="btn-download d-none-xs d-flex-s" href="#">
+          <img  src="img/download.svg" alt="Download icon">
+          <div>Installa app</div>
+        </a>
+        
+        <a class="btn-profile d-none-s" href="#"></a>
+        <div class="separator d-none-xs d-block-s"></div>
+        <div class="d-none-xs d-flex-s"> 
+          <a class="btn-profile" href="#"></a>
+          <a class="user-name" href="#">John Doe</a>
+        </div>
+       
+      </div>
     </aside>
 
 
