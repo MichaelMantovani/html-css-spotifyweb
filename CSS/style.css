@@ -37,6 +37,10 @@ body{
 }
 
 
+img{
+  max-width: 100%;
+}
+
 a{
   text-decoration: none;
   color: var(--color-sidebar);
@@ -86,16 +90,6 @@ h3{
 }
 
 
-.btn-profile{
-  display: block;
-  background-color: rgb(128,128,128);
-  background-image: url(../img/profile.svg);
-  background-size: cover;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
 
 .d-none-xs{
   display: none;
@@ -110,6 +104,7 @@ h3{
 .sidebar-color{
   color: var(--color-sidebar);
 }
+
 
 
 
@@ -198,6 +193,13 @@ header{
 }
 
 
+.btn-profile img{
+  background-color: var(--color-sidebar);
+  border-radius: 50%;
+}
+
+
+
 
 
 
@@ -244,6 +246,9 @@ footer{
 
 /*********   RESPONSIVE   *********/
 
+
+
+/* SMALL SIZE */
 
 @media screen and (min-width: 576px) {
   
@@ -292,36 +297,38 @@ footer{
 
  
 
+  /* MEDIUM SIZE */
 
+  @media screen and (min-width: 768px) {
 
-@media screen and (min-width: 768px) {
+    .orizontal-list li{
+      flex-basis: calc((100% - 20px) / 5)
+    }
 
-  .orizontal-list li{
-    flex-basis: calc((100% - 20px) / 5)
+    
+    .card{
+      flex-basis: calc((100% - 20px) / 4);
+    }
+
+    
+    .row{
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
   }
 
-  
-  .card{
-    flex-basis: calc((100% - 20px) / 4);
+
+  /* LARGE SIZE */
+
+  @media screen and (min-width:992px) {
+    
+    .orizontal-list li{
+      flex-basis: calc((100% - 20px) / 6)
+    }
+
+    .card{
+      flex-basis: calc((100% - 20px) / 6);
+    }
+
   }
-
-  
-  .row{
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  
-}
-
-
-@media screen and (min-width:992px) {
-  
-  .orizontal-list li{
-    flex-basis: calc((100% - 20px) / 6)
-  }
-
-  .card{
-    flex-basis: calc((100% - 20px) / 6);
-  }
-
-}
