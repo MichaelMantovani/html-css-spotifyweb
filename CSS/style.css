@@ -325,6 +325,10 @@ footer{
   height: 100%;
 }
 
+.playing-pic{
+  max-width: 55px;
+}
+
 
 
 
@@ -414,7 +418,6 @@ footer{
       flex-basis: calc(100%  / 4);
     }
 
-    
     
   }
 
